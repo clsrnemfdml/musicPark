@@ -1,36 +1,49 @@
-/* container */
-.container{width: 1000px; margin: 0 auto; background: rgb(173, 166, 166);}
-
-/* row */
-.row{position: relative; margin: 0 20px;}
-
-/* header */
-#header{height: 100px; background: rgb(83, 71, 71);}
-
-#header .header-data{
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 20px;
-}
-#header .header-title{
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 20px;
-}
-#header .header-id{
-    width: 40px;
-    height: 40px;
-    top: 0px;
-    border-radius: 20px;
-    position: absolute; right: 0; bottom: 10px;
-    background: linear-gradient(180deg, #7A4F4F 0%, rgba(197, 130, 130, 0) 100%), #C4C4C4;
-    /* 맞추는 방법 */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+*{margin: 0; padding: 0; font-family: 'Poor Story', cursive;
+text-decoration: none; 
+list-style: none;
 }
 
-/* mediaquery */
-@media (max-width:1020px){
-    .container{width: 100%;}
-}
+.wrap{width: 100%; }
+
+header{width: 1032px; height: 74px; margin: 0 auto;}
+
+.utilMenu{width: 1032px; height: 40px; margin: 0 auto;}
+.utilMenuLeft{float: left; width: 77%; height: 40px;}
+.utilMenuLeft a{line-height: 40px; color: black; margin: 18px;}
+.utilMenuRight{float: left; width: 23%; height: 40px;}
+.utilMenuRight ul{}
+.utilMenuRight ul li{width: 33.3%; float: left;}
+.utilMenuRight ul li a{display: block; width: 100%; text-align: center; height: 40px; 
+    line-height: 40px; color: black;}
+
+.logo{float: left; width: 158px; height: 74px; 
+line-height: 74px; text-align: center; font-size: 40px; font-weight: bold; color: black;}
+.menu{float: left; width: 88px; height: 74px; text-align: center;}
+.menu a{float: left; width: 88px; height: 74px; }
+.menuIcon{width: 30px; height: 30px; padding: 22px 0;}
+
+.findMusic{float: left; width: 610px; height: 74px; 
+    text-align: center; }
+.findInput{float: left; width: 550px; height: 50px; 
+    margin: 12px 30px; border-radius: 100px; border: 1px solid black;}
+.findInput input{width: 400px; height: 35px; margin: 7px; border: 0px;}
+
+.findSpan{float: right; width: 50px; height: 50px; }
+.findSpan a{float: left; width: 50px; height: 50px; }
+.searchIcon{width: 30px; height: 30px; padding: 10px 23px 10px 0;}
+
+.login{float: left; width: 88px; height: 74px;}
+.login a{float: left; width: 88px; height: 74px; text-align: center; line-height: 74px; 
+    color: black;}
+.signIn{float: left; width: 88px; height: 74px; }
+.signIn a{float: left; width: 88px; height: 74px; text-align: center; line-height: 74px; 
+    color: black;}
+
+nav{width: 1032px; height: 416px; margin: 0 auto; background: red;}
+.current{height: 62px; }
+.current a{padding: 16px; display: block; color: black; font-size: 20px; font-weight: bold;}
+.album{height: 354px; background: gold;}
+
+.albumList{position: relative; width: 155px; height: 170px;  background: rgb(139, 133, 94);}
+.albumListBottom{position: absolute; width: 155px; height: 60px; 
+    background: rgb(98, 139, 94); bottom: 0;}
